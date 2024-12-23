@@ -1,0 +1,212 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- navbar -->
+    <header class="bg-white shadow-md p-5">
+        <nav class="container flex justify-between items-center mx-auto w-3/4">
+            <div>
+                <a class="text-3xl font-bold" href="#">La Maison</a>
+            </div>
+            <div>
+                <button id="main_button" class="md:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5" />
+                      </svg>
+                      
+                </button>
+                <ul id="main_menu" class="absolute top-19 w-full text-center  left-0 bg-white hidden md:relative md:top-0 md:flex md:gap-5 py-4 left-0 md:block z-30">
+                    <li class="hover:bg-black hover:bg-opacity-40"><a href="#">Home</a></li>
+                    <li class="hover:bg-black hover:bg-opacity-40"><a href="#">Menu</a></li>
+                    <li class="hover:bg-black hover:bg-opacity-40"><a href="#">About</a></li>
+                    <li class="hover:bg-black hover:bg-opacity-40"><a href="#">Specialties</a></li>
+                    <li class="hover:bg-black hover:bg-opacity-40"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- navbar end -->
+     <!-- hero section -->
+      <section style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./img/specialties-2.avif) center/cover no-repeat;" class="relative h-screen mb-32 flex-col text-center flex justify-center items-center">
+        <div class="text-white ">
+            <h2 class="text-5xl font-bold">La Maison</h2>
+            <p class="text-2xl mb-5">Fine Dining & Exceptional Experience</p>
+            <a class="bg-white text-black p-2 rounded-3xl" href="#">VIEW OUR MENU</a>
+        </div>
+      </section>
+     <!-- hero section end -->
+      <!-- our story section -->
+       <section class="container mx-auto px-4">
+        <div class="grid items-center md:grid-cols-2 mb-32">
+            <div>
+                <img class="rounded-lg" src="./img/about-section.jpeg" alt="">
+
+            </div>
+            <div class="text-justify">
+                <h2 class="text-5xl font-semibold mb-4">Our Story</h2>
+                <p class="text-lg mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus ipsa in veritatis vero error facere, velit impedit sit maxime laborum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, accusantium.</p>
+                <p class="text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus rerum, aliquam deserunt at aut dolorum.</p>
+            </div>
+        </div>
+       </section>
+      <!-- our story section end -->
+       <!-- our specialties section -->
+        <section class="container mb-32 mx-auto px-4">
+            <div>
+                <h2 class="text-5xl text-center font-bold mb-14">Our Specialties</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="relative">
+                    <img class="w-full rounded-lg " src="./img/specialties-3.avif" alt="">
+                    <div class="absolute flex flex-col inset-0 text-white  text-center items-center justify-center bg-black bg-opacity-50 hover:bg-opacity-40">
+                        <h2 class="text-5xl md:text-3xl">Signature Dishes</h2>
+                        <p class="text-2xl md:text-lg">Crafted with passion</p>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img class="w-full" src="./img/special-wine.avif" alt="">
+                    <div class="absolute flex flex-col inset-0 text-white  text-center items-center justify-center bg-black bg-opacity-50 hover:bg-opacity-40">
+                        <h2 class="text-5xl md:text-3xl">Wine Section</h2>
+                        <p class="text-2xl md:text-lg">Curated selection</p>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img class="w-full rounded-lg rounded-lg" src="./img/specialties-1.avif" alt="">
+                    <div class="absolute flex flex-col inset-0 text-white  text-center items-center justify-center bg-black bg-opacity-50 hover:bg-opacity-40">
+                        <h2 class="text-5xl md:text-3xl">Desserts</h2>
+                        <p class="text-2xl md:text-lg">Sweet reflections</p>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+       <!-- our specialties section end -->
+        <!-- our menu section -->
+         <section class="container mx-auto px-32 mb-32">
+            <div>
+                <div>
+                    <h2 class="text-5xl text-center font-bold mb-14">Our Menu</h2>
+                </div>
+                <div class="grid md:grid-cols-2 gap-16">
+                    <!-- left menu -->
+                    <div>
+                        <div>
+                            <h2 class="text-3xl font-semibold mb-4">Starters</h2>
+                        </div>
+                        <div class="flex items-center gap-10 mb-4">
+                            <div class="w-11/12">
+                                <h2 class="text-2xl font-semibold ">French Onion Soup</h2>
+                                <p class="text-lg">Caramelized onions, beef broth, gruyere</p>
+                            </div>
+                            <span class="text-orange-500 font-bold w-1/12">$16</span>
+                        </div>
+                        <div class="flex items-center gap-10 ">
+                            <div class="w-11/12">
+                                <h2 class="text-2xl font-semibold">Esrcagots de Bourgogne</h2>
+                                <p class="text-lg">Garlic-herb butter, parsicy</p>
+                            </div>
+                            <span class="text-orange-500 font-bold w-1/12" >$18</span>
+                        </div>
+                    </div>
+                    <!-- left menu end -->
+                     <!-- right menu -->
+                     <div>
+                        <div>
+                            <h2 class="text-3xl font-semibold mb-4">Main Courses</h2>
+                        </div>
+                        <div class="flex items-center gap-10 mb-4">
+                            <div class="w-11/12">
+                                <h2 class="text-2xl font-semibold ">Coq au Vin</h2>
+                                <p class="text-lg">Red Wine, braised chicken, pearl onions, mashrooms</p>
+                            </div>
+                            <span class="text-orange-500 font-bold w-1/12">$34</span>
+                        </div>
+                        <div class="flex items-center gap-10 ">
+                            <div class="w-11/12">
+                                <h2 class="text-2xl font-semibold">Beef Bourgogne</h2>
+                                <p class="text-lg">Slow cooked beef, red wine, vegetables</p>
+                            </div>
+                            <span class="text-orange-500 font-bold w-1/12" >$38</span>
+                        </div>
+                    </div>
+                     <!-- right menu end -->
+                </div>
+                    
+            </div>
+         </section>   
+        <!-- our menu section end -->
+         <!-- reservation section -->
+          <section class="container mx-auto px-4 rounded-lg mb-32">
+            <div class="md:mx-32 md:px-10 mx-10 px-10 shadow-2xl rounded-lg">
+                <div>
+                    <h2 class="text-5xl text-center font-bold pt-8 mb-20">Make a Reservation</h2>
+                </div>
+                <div class="grid md:grid-cols-2 gap-10">
+                    <!-- left reservation -->
+                     <div>
+                        <h2 class="text-3xl font-semibold mb-8">Contact Information</h2>
+                        <h2 class="text-xl font-semibold">Address</h2>
+                        <p class="mb-4">123 Gourmet Street, Culinary District</p>
+                        <h2 class="text-xl font-semibold">Phone</h2>
+                        <p class="mb-4">+1(555) 123-4567</p>
+                        <h2 class="text-xl font-semibold">Email</h2>
+                        <p class="mb-4">reservation@gmail.com</p>
+                        <h2 class="text-xl font-semibold">Hours</h2>
+                        <p>Tuesday - Sunday: 5:30 PM - 10:30 PM</p>
+                        <p>Weekend Brunch: 11:00 AM - 2:30 PM</p>
+                        <p class="md:mb-10">Closed on Mondays</p>
+                     </div>
+                    
+                     <!--  left reservation end  -->
+                       <!-- right reservation -->
+                        <div class="flex md:items-center mb-10">
+                            <img src="./img/reservation.webp" alt="">
+                        </div>
+                       <!-- right reservation end -->
+                </div>
+            </div>
+          </section>
+         <!-- reservation section end -->
+
+          <!-- top footer section -->
+           <section class=" bg-black text-white mx-auto px-4 ">
+            <div class="p-10">
+                <div class="grid lg:grid-cols-3 md:grid-cols-2">
+                    <div class="mb-4">
+                        <h2 class="text-2xl font-semibold">La Maison</h2>
+                        <p>Experience the art of the dining</p>
+                    </div>
+                    <div class="mb-4 flex flex-col">
+                        <h2 class="text-2xl font-semibold">Connect</h2>
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">X</a>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-semibold">Newsletter</h2>
+                        <p>Subscribe for updates and special offers</p>
+                        <div class="mt-4">
+                            <input class="rounded" type="email" placeholder="Enter your email">
+                            <button class="bg-white text-black  px-1 rounded">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           </section>
+          <!-- top footer section end -->
+
+          <!-- bottom footer section -->
+           <section class="bg-black text-white mx-auto p-6 mb-10">
+            <div class="text-center">
+                <p>&#169;	2024 La Maison. All rights reserved.</p>
+            </div>
+           </section>
+          <!-- bottom footer section end -->
+
+    <script src="./resturant.js"></script>
+</body>
+</html>
